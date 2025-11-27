@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
     printf("Please input name: ");
     scanf("%[^\n]100s", input);
     printf("Original: %s\n", input);
-    printf("%d\n", sizeof(input));
+    printf("%llu\n", sizeof(input));
     reverse_count(10);
     return 0;
 }
