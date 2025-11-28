@@ -11,12 +11,14 @@ int binary(int x, int v[], int n) {
     high = n - 1;
 
     while (low <= high) {
+        // start search in the middle of array
         mid = (low + high) / 2;
         if (x < v[mid]) {
             high = mid - 1;
         } else if (x > v[mid]) {
             low = mid + 1;
         } else {
+            // match was found
             return mid;
         }
     }
