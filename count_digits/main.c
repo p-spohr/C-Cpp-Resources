@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
                 break;
             default:
                 nother++;
-                break;
+                break; // defensive programming tip : always put break in last case, even default
         }
     }
     
