@@ -3,5 +3,5 @@
 
 void increment(void) {
     counter++;
-    printf("Counter: %d\n", counter);
+    printf("%s %s() Counter: %d\n", __FILE__, __FUNCTION__, counter);
 }

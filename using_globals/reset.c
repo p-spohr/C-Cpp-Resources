@@ -3,5 +3,5 @@
 
 void reset(void) {
     counter = 0;
-    printf("Counter Reset\n");
+    printf("%s %s() Counter: %d\n", __FILE__, __FUNCTION__, counter);
 }
